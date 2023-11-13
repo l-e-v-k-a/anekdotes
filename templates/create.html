@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="../static/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link rel="stylesheet" type="text/css" href="../static/css/style.css">
+    <title>Anekdot#{{num}}</title>
+</head>
+<body>
+<div class="container">
+    <br>
+    <h3>Текст анекдота:<a href= '/'><button class="btn btn-light float-right">На главную</button></a></h3>
+   <form method="post">
+    <div class="rounded border border-secondary frame">
+        <div class="form-group">
+            <label>Текст анекдота</label>
+            <textarea class="form-control" name="anek_text" rows="3"></textarea>
+        </div>
+    </div>
+    <br>
+    <h4>Теги</h4>
+    <div class="rounded border border-secondary frame">
+        <div class="form-group">
+            <label>Теги</label>
+            <textarea class="form-control" name="anek_tags" rows="3"></textarea>
+        </div>
+    </div>
+    <br>
+    <h4>Фонд</h4>
+    <div class="rounded border border-secondary frame">
+    <select class="form-control form-control-sm" name="anek_fond">
+        <option>Платина</option>
+        <option>Золотой</option>
+        <option>Серебряный</option>
+        <option>Медный</option>
+        <option>Бронзовый</option>
+        <option>Кирпичный</option>
+        <option>Деревянный</option>
+        <option>Картонный</option>
+        <option>Грязевой</option>
+        <option class="bg-danger">Даня Ануфриев</option>
+    </select>
+    </div>
+        <br>
+        <button type="submit" class="btn fadeIn fourth">Запостить</button></a>
+    </form>
+</div>
+</body>
+
+<style>
+
+h4 {
+    padding-top: 3px;
+}
+
+.par {
+    margin: -1px;
+}
+
+.frame {
+    padding: 10px;
+    background-color: #f9f9f9;
+}
+</style>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="../static/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link rel="stylesheet" type="text/css" href="../static/css/style.css">
+    <title>Anekdot#{{num}}</title>
+</head>
+<body>
+<div class="container">
+    <br>
+    <h3>Просмотр анекдота номер {{num}} <a href="/"><button class="btn btn-light float-right">На главную</button></a></h3>
+    <br>
+    <div class="rounded border border-secondary frame">
+    {% for str in i[1].split('\n')%}
+        <p class="par">{{ str }}</p>
+        {% endfor %}
+    </div>
+    <br>
+    <h4>Теги</h4>
+    <div class="rounded border border-secondary frame">
+    {% for str in i[2].split('\n')%}
+        <p class="par">{{ str }}</p>
+        {% endfor %}
+    </div>
+    <br>
+    <h4>Фонд</h4>
+    <div class="rounded border border-secondary frame">
+    <p>{{ fond }}</p>
+    </div>
+</div>
+</body>
+
+<style>
+
+h4 {
+    padding-top: 3px;
+}
+
+.par {
+    margin: -1px;
+}
+
+.frame {
+    padding: 10px;
+    background-color: #f9f9f9;
+}
+</style>
+</html>
